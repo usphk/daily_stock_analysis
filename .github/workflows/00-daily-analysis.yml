@@ -64,8 +64,6 @@ jobs:
           # ==========================================
           # AI 配置
           # ==========================================
-          REPORT_LANGUAGE: ${{ vars.REPORT_LANGUAGE }}
-          OUTPUT_LANGUAGE: ${{ vars.OUTPUT_LANGUAGE }}
           GENERATION_BACKEND: ${{ vars.GENERATION_BACKEND || secrets.GENERATION_BACKEND }}
           GENERATION_FALLBACK_BACKEND: ${{ vars.GENERATION_FALLBACK_BACKEND || secrets.GENERATION_FALLBACK_BACKEND || 'litellm' }}
           GENERATION_BACKEND_TIMEOUT_SECONDS: ${{ vars.GENERATION_BACKEND_TIMEOUT_SECONDS || secrets.GENERATION_BACKEND_TIMEOUT_SECONDS }}
